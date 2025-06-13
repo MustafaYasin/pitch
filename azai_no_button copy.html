@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aynzam AI - Enterprise Pitch Deck | Secure Legal AI Solutions</title>
+    
+    <!-- Enhanced Tailwind CSS with JIT compilation -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aynzam-blue': '#2563eb',
+                        'aynzam-navy': '#1e293b',
+                        'aynzam-gold': '#f59e0b',
+                        'aynzam-emerald': '#10b981'
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                        'bounce-gentle': 'bounceGentle 2s infinite',
+                        'pulse-glow': 'pulseGlow 2s infinite',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'scale-in': 'scaleIn 0.5s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gradient-x': 'gradientX 3s ease infinite',
+                        'typewriter': 'typewriter 3s steps(40) infinite'
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-50px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(50px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' }
+                        },
+                        bounceGentle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                            '50%': { transform: 'scale(1.05)', opacity: '0.8' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        scaleIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.9)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        gradientX: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' }
+                        }
+                    },
+                    backgroundSize: {
+                        '300%': '300%'
+                    },
+                    fontFamily: {
+                        'display': ['Inter', 'system-ui', 'sans-serif'],
+                        'body': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Professional Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons for Professional Look -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Chart.js for Professional Charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    
+    <!-- AOS (Animate On Scroll) for Professional Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Professional CSS Framework -->
+    <style>
+        /* Enterprise-Grade Base Styling */
+        :root {
+            --aynzam-primary: #2563eb;
+            --aynzam-secondary: #1e293b;
+            --aynzam-accent: #f59e0b;
+            --aynzam-success: #10b981;
+            --shadow-luxury: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-elevated: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            scroll-behavior: smooth;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Professional Typography */
+        .enterprise-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #2563eb, #1e293b, #f59e0b);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientX 4s ease infinite;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+            letter-spacing: -0.02em;
+        }
+
+        /* Special styling for Aynzam name only - STRONGER OVERRIDE */
+        .aynzam-name {
+            color: #065f46 !important;
+            background: none !important;
+            -webkit-background-clip: unset !important;
+            -webkit-text-fill-color: #065f46 !important;
+            background-clip: unset !important;
+            background-image: none !important;
+        }
+
+        .enterprise-subtitle {
+            font-size: clamp(1.2rem, 3vw, 2.2rem);
+            font-weight: 600;
+            color: #64748b;
+            letter-spacing: -0.025em;
+        }
+
+        /* Enhanced Slide System */
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 32px;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-luxury);
+            border: 3px solid rgba(37, 99, 235, 0.1);
+            overflow: hidden;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #2563eb, #f59e0b, #10b981, #2563eb);
+            background-size: 400% 100%;
+            animation: gradientX 3s ease infinite;
+        }
+
+        .slide:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 40px 80px -12px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-content-wrapper {
+            width: 100%;
+            max-width: 1400px;
+            padding: 4rem 5rem;
+            z-index: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Fixed Slide Number - Bottom Right, Black Text Only */
+        .slide-number {
+            position: absolute !important;
+            bottom: 8mm !important;
+            right: 8mm !important;
+            font-size: 11pt !important;
+            color: #000000 !important;
+            background: none !important;
+            padding: 0 !important;
+            border-radius: 0 !important;
+            font-weight: 600 !important;
+            box-shadow: none !important;
+            z-index: 10 !important;
+            font-family: 'JetBrains Mono', monospace !important;
+        }
+
+        /* Professional Animations */
+        @keyframes gradientX {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(60px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+
+        /* Enterprise Cards */
+        .enterprise-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 2px solid rgba(37, 99, 235, 0.1);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-elevated);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .enterprise-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+            transition: left 0.8s;
+        }
+
+        .enterprise-card:hover::before {
+            left: 100%;
+        }
+
+        .enterprise-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 40px 80px -12px rgba(37, 99, 235, 0.3);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+
+        /* Professional Icons */
+        .enterprise-icon {
+            width: 4rem;
+            height: 4rem;
+            background: linear-gradient(135deg, #2563eb, #1e293b);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.3);
+            transition: all 0.4s ease;
+        }
+
+        .enterprise-icon:hover {
+            transform: scale(1.2) rotate(10deg);
+            box-shadow: 0 16px 40px rgba(37, 99, 235, 0.4);
+        }
+
+        .enterprise-icon svg {
+            width: 2rem;
+            height: 2rem;
+            color: white;
+        }
+
+        /* Professional Statistics */
+        .stat-display {
+            text-align: center;
+            padding: 2.5rem;
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border-radius: 20px;
+            border: 2px solid rgba(37, 99, 235, 0.1);
+            box-shadow: var(--shadow-elevated);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-display::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #2563eb, transparent);
+            border-radius: 0 20px 0 100%;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #2563eb, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 0.75rem;
+            animation: pulse 3s infinite;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #64748b;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* Enhanced Chat Interface */
+        .chat-interface {
+            background: linear-gradient(145deg, #ffffff, #f0f9ff);
+            border-radius: 32px;
+            padding: 2rem;
+            box-shadow: 0 30px 60px -12px rgba(37, 99, 235, 0.25);
+            border: 3px solid rgba(37, 99, 235, 0.1);
+            max-width: 950px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chat-interface::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #f59e0b, #10b981);
+            background-size: 400% 100%;
+            animation: gradientX 3s ease infinite;
+        }
+
+        .chat-header {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2563eb, #1e293b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            margin-bottom: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .chat-search {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 3px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2.5rem;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .chat-search:focus-within {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.15), 0 8px 25px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .chat-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .chat-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+            transition: left 0.6s;
+        }
+
+        .chat-card:hover::before {
+            left: 100%;
+        }
+
+        .chat-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+            border-color: #2563eb;
+        }
+
+        .custom-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 16px;
+            margin: 0 auto 0.75rem;
+            padding: 0.5rem;
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+
+        .custom-icon:hover {
+            transform: scale(1.1) rotate(5deg);
+            border-color: #2563eb;
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+        }
+
+        .custom-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Neural Network Graph Styles */
+        .network-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 2px solid #e2e8f0;
+        }
+
+        .network-node {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            animation: pulse 3s infinite;
+            z-index: 2;
+        }
+
+        .network-node.center {
+            background: linear-gradient(135deg, #2563eb, #1e293b);
+            color: white;
+            width: 120px;
+            height: 120px;
+            font-size: 1rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 2s infinite;
+        }
+
+        .network-node.peripheral {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            font-size: 0.7rem;
+        }
+
+        .network-connection {
+            position: absolute;
+            height: 2px;
+            background: linear-gradient(90deg, #2563eb, #f59e0b);
+            opacity: 0.6;
+            z-index: 1;
+            animation: pulse 4s infinite;
+        }
+
+        /* Improved Page 7 Design */
+        .benefits-showcase {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border-radius: 32px;
+            padding: 4rem;
+            border: 3px solid rgba(37, 99, 235, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefits-showcase::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #2563eb, #f59e0b, #10b981);
+            background-size: 400% 100%;
+            animation: gradientX 3s ease infinite;
+        }
+
+        .benefit-stat {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border-radius: 24px;
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 2px solid rgba(37, 99, 235, 0.1);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-stat::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #2563eb, transparent);
+            border-radius: 0 24px 0 100%;
+        }
+
+        .benefit-stat:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+
+        .benefit-number {
+            font-size: 4rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #2563eb, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-label {
+            font-size: 1.2rem;
+            color: #1e293b;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        /* Improved Last Page Design */
+        .final-cta {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 3px solid rgba(37, 99, 235, 0.1);
+            border-radius: 32px;
+            padding: 4rem;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #2563eb, #f59e0b, #10b981);
+            background-size: 400% 100%;
+            animation: gradientX 3s ease infinite;
+        }
+
+        .cta-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #2563eb, #1e293b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 2rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.4rem;
+            color: #64748b;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #2563eb, #1e293b);
+            color: white;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+            font-size: 1.1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
+        }
+
+        .evaluation-steps {
+            background: linear-gradient(145deg, #f8fafc, #e2e8f0);
+            border-radius: 24px;
+            padding: 3rem;
+            border: 2px solid #e2e8f0;
+        }
+
+        .step-icon {
+            width: 5rem;
+            height: 5rem;
+            background: linear-gradient(135deg, #2563eb, #1e293b);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: rgba(37, 99, 235, 0.1);
+            z-index: 9999;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #2563eb, #f59e0b, #10b981);
+            background-size: 400% 100%;
+            animation: gradientX 2s ease infinite;
+            transition: width 0.4s ease;
+        }
+
+        /* Navigation */
+        .nav-button {
+            background: linear-gradient(135deg, #ffffff, #f8fafc);
+            border: 2px solid rgba(37, 99, 235, 0.2);
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-elevated);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.15);
+            background: linear-gradient(135deg, #2563eb, #1e293b);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+        }
+
+        .nav-button:hover svg {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .slide-content-wrapper {
+                padding: 2rem 1.5rem;
+            }
+
+            .enterprise-title {
+                font-size: 2.5rem;
+            }
+
+            .enterprise-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Enhanced Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .pulse-glow {
+            animation: pulse 2s infinite;
+        }
+
+        /* Consistent Typography - FIX HEADER SIZES */
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem) !important;
+            font-weight: 900 !important;
+            line-height: 1.1 !important;
+            margin-bottom: 1.5rem !important;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 6vw, 4rem) !important;
+            font-weight: 800 !important;
+            line-height: 1.1 !important;
+            margin-bottom: 1.5rem !important;
+            color: #1e293b !important;
+            text-align: center !important;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2.5rem) !important;
+            font-weight: 700 !important;
+            line-height: 1.2 !important;
+            margin-bottom: 1rem !important;
+            color: #374151 !important;
+        }
+
+        h4 {
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem) !important;
+            font-weight: 600 !important;
+            line-height: 1.3 !important;
+            margin-bottom: 0.75rem !important;
+            color: #1e293b !important;
+        }
+
+        /* OPTIMIZED PDF PRINT STYLES - 16:9 LANDSCAPE WIDESCREEN */
+        @media print {
+            @page {
+                size: A4 landscape;
+                margin: 12mm;
+            }
+
+            * {
+                animation: none !important;
+                transition: none !important;
+                transform: none !important;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+            }
+
+            .slide {
+                animation: none !important;
+                transform: none !important;
+                transition: none !important;
+                page-break-after: always !important;
+                break-inside: avoid !important;
+                position: relative !important;
+                height: 186mm !important;
+                width: 100% !important;
+                margin: 0 !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                border: none !important;
+                background: white !important;
+                overflow: visible !important;
+            }
+
+            .slide::before {
+                background: linear-gradient(90deg, #2563eb, #f59e0b, #10b981) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                height: 3mm !important;
+                animation: none !important;
+            }
+
+            .slide-content-wrapper {
+                width: 100% !important;
+                height: auto !important;
+                max-width: 100% !important;
+                padding: 15mm !important;
+                margin: 0 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                align-items: center !important;
+                text-align: center !important;
+                animation: none !important;
+                transform: none !important;
+                position: static !important;
+            }
+
+            .aynzam-name {
+                color: #065f46 !important;
+                background: none !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            .enterprise-title {
+                color: #2563eb !important;
+                background: none !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                animation: none !important;
+                transform: none !important;
+            }
+
+            .floating, .pulse-glow, .animate-on-scroll {
+                animation: none !important;
+                transform: none !important;
+            }
+
+            /* Perfect Team Page Print Layout */
+            .team-member-card {
+                animation: none !important;
+                transform: none !important;
+                transition: none !important;
+                height: auto !important;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+                border: 1px solid #e2e8f0 !important;
+                border-radius: 12px !important;
+                page-break-inside: avoid !important;
+            }
+
+            .team-profile-image {
+                width: 80px !important;
+                height: 80px !important;
+                border: 2px solid #e2e8f0 !important;
+                box-shadow: none !important;
+            }
+
+            .skill-badge {
+                background: #f1f5f9 !important;
+                color: #1e293b !important;
+                border: 1px solid #cbd5e1 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            #export-button-container,
+            #slide-navigation,
+            #progress-bar,
+            #copy-notification {
+                display: none !important;
+            }
+
+            /* Ensure proper content scaling for 16:9 */
+            .grid {
+                gap: 8mm !important;
+            }
+
+            h1 {
+                font-size: 32pt !important;
+                line-height: 1.1 !important;
+                margin-bottom: 8mm !important;
+            }
+
+            h2 {
+                font-size: 24pt !important;
+                line-height: 1.1 !important;
+                margin-bottom: 6mm !important;
+            }
+
+            h3 {
+                font-size: 18pt !important;
+                line-height: 1.2 !important;
+                margin-bottom: 4mm !important;
+            }
+
+            h4 {
+                font-size: 14pt !important;
+                line-height: 1.3 !important;
+                margin-bottom: 3mm !important;
+            }
+
+            p {
+                font-size: 11pt !important;
+                line-height: 1.4 !important;
+                margin-bottom: 3mm !important;
+            }
+        }
+
+        .chat-search input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 1.1rem;
+            outline: none;
+            color: #1e293b;
+        }
+
+        /* Team Page Styles */
+        .team-member-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 2px solid rgba(37, 99, 235, 0.1);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .team-member-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+            transition: left 0.8s;
+        }
+
+        .team-member-card:hover::before {
+            left: 100%;
+        }
+
+        .team-member-card:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 25px 50px rgba(37, 99, 235, 0.2);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+
+        .team-profile-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .team-profile-image {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #e2e8f0;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s ease;
+        }
+
+        .team-profile-image::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(135deg, #2563eb, #f59e0b, #10b981);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .team-member-card:hover .team-profile-image::before {
+            opacity: 1;
+        }
+
+        .team-member-card:hover .team-profile-image {
+            transform: scale(1.05);
+            border-color: white;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.4s ease;
+        }
+
+        .team-member-card:hover .profile-img {
+            transform: scale(1.1);
+        }
+
+        .skill-badge {
+            background: linear-gradient(135deg, #e2e8f0, #f1f5f9);
+            color: #1e293b;
+            padding: 0.5rem 1rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid #cbd5e1;
+            transition: all 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            background: linear-gradient(135deg, #2563eb, #1e293b);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 text-slate-800 font-body">
+    <!-- Professional Export Button -->
+    <!-- Enhanced Progress Bar -->
+    <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill w-0"></div>
+    </div>
+    
+    <!-- Success Notification -->
+    <div id="copy-notification" class="fixed top-24 left-1/2 transform -translate-x-1/2 -translate-y-20 bg-gradient-to-r from-emerald-500 to-green-600 text-white px-6 py-4 rounded-xl shadow-luxury transition-all duration-500 z-[2000] opacity-0">
+        <div class="flex items-center gap-3">
+            <i data-lucide="check-circle" class="w-5 h-5"></i>
+            <span class="font-medium">Ready for PDF export!</span>
+        </div>
+    </div>
+
+    <div class="deck-container max-w-7xl mx-auto px-4"> 
+        <!-- Slide 1: Enterprise Title Slide -->
+        <div class="slide" data-aos="fade-up" data-aos-duration="1000">
+            <div class="slide-content-wrapper text-center"> 
+                <div class="slide-number">1</div>
+                
+                <!-- Enterprise Logo & Title -->
+                <div class="mb-12 animate-on-scroll" data-aos="zoom-in" data-aos-delay="200">
+                    <h1 class="enterprise-title mb-6"><span class="aynzam-name">Aynzam</span> AI</h1>
+                    <div class="enterprise-subtitle mb-8">Secure AI Knowledge Management for Law Firms</div>
+                </div>
+
+                <!-- Professional Value Proposition -->
+                <div class="max-w-5xl mx-auto mb-16 animate-on-scroll" data-aos="slide-up" data-aos-delay="400">
+                    <div class="bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 border-2 border-blue-200/50 rounded-3xl p-10 shadow-elevated">
+                        <div class="flex items-start gap-6">
+                            <div class="enterprise-icon flex-shrink-0 floating">
+                                <i data-lucide="shield-check" class="w-8 h-8"></i>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="text-2xl font-bold text-anyzam-navy mb-4">Enterprise AI Solutions for Legal Excellence</h3>
+                                <p class="text-xl text-slate-700 leading-relaxed">
+                                    We provide secure, on-premises AI-powered access to your firm's institutional knowledge, 
+                                    potentially reducing the time legal professionals spend searching for information by up to 
+                                    <span class="font-bold text-anyzam-blue pulse-glow">75%</span> while maintaining absolute data sovereignty.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Features Grid -->
+                <div class="grid md:grid-cols-3 gap-8 mb-16 animate-on-scroll" data-aos="fade-up" data-aos-delay="600">
+                    <div class="enterprise-card text-center">
+                        <div class="enterprise-icon mx-auto bg-gradient-to-br from-emerald-500 to-green-600">
+                            <i data-lucide="building-2" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-anyzam-navy mb-3">On-Premises Security</h4>
+                        <p class="text-slate-600">Complete data sovereignty with zero external dependencies</p>
+                    </div>
+                    
+                    <div class="enterprise-card text-center">
+                        <div class="enterprise-icon mx-auto bg-gradient-to-br from-amber-500 to-orange-600">
+                            <i data-lucide="scale" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-anyzam-navy mb-3">Legal Specialization</h4>
+                        <p class="text-slate-600">AI trained specifically for legal terminology and workflows</p>
+                    </div>
+                    
+                    <div class="enterprise-card text-center">
+                        <div class="enterprise-icon mx-auto bg-gradient-to-br from-purple-500 to-indigo-600">
+                            <i data-lucide="zap" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-anyzam-navy mb-3">Instant Knowledge Access</h4>
+                        <p class="text-slate-600">Natural language queries with contextual legal understanding</p>
+                    </div>
+                </div>
+
+                <!-- Enterprise Badge with Enhanced Shading -->
+                <div class="flex justify-center animate-on-scroll" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-8 py-4 rounded-full text-xl font-black shadow-luxury floating" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7); border: 3px solid rgba(255,255,255,0.3);">
+                        <i data-lucide="award" class="w-6 h-6 inline mr-3"></i>
+                        <span style="color: white !important; font-weight: 900 !important;">Enterprise-Grade Legal AI Platform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Chat Interface Demo -->
+        <div class="slide" data-aos="fade-up" data-aos-duration="1000">
+            <div class="slide-content-wrapper"> 
+                <div class="slide-number">2</div>
+                
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-bold text-anyzam-navy mb-6" data-aos="fade-down">Intuitive AI Interface</h2>
+                    <p class="text-2xl text-slate-600 max-w-4xl mx-auto">Experience natural language interaction with your firm's knowledge base</p>
+                </div>
+
+                <!-- Chat Interface Mockup -->
+                <div class="chat-interface animate-on-scroll" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="chat-header floating">
+                        Hello, how can I help you find?
+                    </div>
+                    
+                    <div class="chat-search">
+                        <i data-lucide="plus" class="w-6 h-6 text-slate-400 mr-4"></i>
+                        <input type="text" placeholder="Ask Aynzam about your documents..." class="placeholder-slate-400" readonly value="">
+                        <i data-lucide="mic" class="w-6 h-6 text-slate-400 ml-4"></i>
+                        <i data-lucide="more-horizontal" class="w-6 h-6 text-slate-400 ml-2"></i>
+                    </div>
+                    
+                    <div class="chat-cards">
+                        <div class="chat-card">
+                            <div class="custom-icon">
+                                <img src="icons/pdf.png" alt="PDF Documents">
+                            </div>
+                            <h4 class="font-semibold text-anyzam-navy mb-1 text-sm">Search PDF Documents</h4>
+                            <p class="text-xs text-slate-600">Find information in legal briefs and contracts</p>
+                        </div>
+                        <div class="chat-card">
+                            <div class="custom-icon">
+                                <img src="icons/Microsoft_Office_PowerPoint_(2019–present).svg.png" alt="PowerPoint">
+                            </div>
+                            <h4 class="font-semibold text-anyzam-navy mb-1 text-sm">PowerPoint Presentations</h4>
+                            <p class="text-xs text-slate-600">Access case studies and client presentations</p>
+                        </div>
+                        <div class="chat-card">
+                            <div class="custom-icon">
+                                <img src="icons/confluence.png" alt="Confluence">
+                            </div>
+                            <h4 class="font-semibold text-anyzam-navy mb-1 text-sm">Knowledge Base</h4>
+                            <p class="text-xs text-slate-600">Search firm policies and procedures</p>
+                        </div>
+                        <div class="chat-card">
+                            <div class="custom-icon">
+                                <img src="icons/onedrive.png" alt="OneDrive">
+                            </div>
+                            <h4 class="font-semibold text-anyzam-navy mb-1 text-sm">Cloud Storage</h4>
+                            <p class="text-xs text-slate-600">Access shared files and templates</p>
+                        </div>
+                        <div class="chat-card">
+                            <div class="custom-icon">
+                                <img src="icons/outlook.png" alt="Outlook">
+                            </div>
+                            <h4 class="font-semibold text-anyzam-navy mb-1 text-sm">Email Archives</h4>
+                            <p class="text-xs text-slate-600">Find important communications and decisions</p>
+                        </div>
+                        <div class="chat-card">
+                            <div class="custom-icon">
+                                <img src="icons/slack.png" alt="Slack">
+                            </div>
+                            <h4 class="font-semibold text-anyzam-navy mb-1 text-sm">Team Communications</h4>
+                            <p class="text-xs text-slate-600">Search team discussions and decisions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interface Features -->
+                <div class="grid md:grid-cols-3 gap-8 mt-16" data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-center">
+                        <div class="enterprise-icon mx-auto bg-gradient-to-br from-blue-500 to-cyan-600 mb-4">
+                            <i data-lucide="message-circle" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-anyzam-navy mb-3">Natural Language</h4>
+                        <p class="text-slate-600">Ask questions in plain English, just like talking to a colleague</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="enterprise-icon mx-auto bg-gradient-to-br from-green-500 to-emerald-600 mb-4">
+                            <i data-lucide="brain" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-anyzam-navy mb-3">Contextual Understanding</h4>
+                        <p class="text-slate-600">AI understands legal context and provides relevant, precise answers</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="enterprise-icon mx-auto bg-gradient-to-br from-purple-500 to-indigo-600 mb-4">
+                            <i data-lucide="shield" class="w-8 h-8"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-anyzam-navy mb-3">Secure Access</h4>
+                        <p class="text-slate-600">Role-based access ensures appropriate information visibility</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: The Information Search Challenge -->
+        <div class="slide" data-aos="fade-up" data-aos-duration="1000">
+            <div class="slide-content-wrapper"> 
+                <div class="slide-number">3</div>
+                
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-bold text-anyzam-navy mb-6" data-aos="fade-down">The Information Search Challenge</h2>
+                    <p class="text-2xl text-slate-600 max-w-4xl mx-auto">Legal professionals face unprecedented challenges in accessing critical information efficiently</p>
+                </div>
+
+                <!-- Challenge Cards Grid -->
+                <div class="grid md:grid-cols-2 gap-10 mb-16" data-aos="fade-up" data-aos-delay="200">
+                    <div class="enterprise-card group">
+                        <div class="flex items-start gap-6">
+                            <div class="enterprise-icon bg-gradient-to-br from-red-500 to-rose-600 group-hover:scale-110 transition-transform">
+                                <i data-lucide="clock" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-anyzam-navy mb-4">Significant Time Investment</h4>
+                                <p class="text-lg text-slate-700 mb-4">Knowledge workers spend up to <span class="font-bold text-red-600 pulse-glow">40% of their time</span> searching for information across fragmented systems.</p>
+                                <div class="flex items-center gap-3 text-slate-500">
+                                    <i data-lucide="trending-up" class="w-5 h-5"></i>
+                                    <span class="font-medium">20% increase in search time over past 3 years</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="enterprise-card group">
+                        <div class="flex items-start gap-6">
+                            <div class="enterprise-icon bg-gradient-to-br from-orange-500 to-amber-600 group-hover:scale-110 transition-transform">
+                                <i data-lucide="puzzle" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-anyzam-navy mb-4">Information Fragmentation</h4>
+                                <p class="text-lg text-slate-700 mb-4">Critical knowledge exists across <span class="font-bold text-orange-600 pulse-glow">8+ platforms</span> including intranets, document systems, emails, and local files.</p>
+                                <div class="flex items-center gap-3 text-slate-500">
+                                    <i data-lucide="database" class="w-5 h-5"></i>
+                                    <span class="font-medium">Average firm uses 15+ knowledge repositories</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="enterprise-card group">
+                        <div class="flex items-start gap-6">
+                            <div class="enterprise-icon bg-gradient-to-br from-purple-500 to-indigo-600 group-hover:scale-110 transition-transform">
+                                <i data-lucide="user-x" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-anyzam-navy mb-4">Knowledge Retention Crisis</h4>
+                                <p class="text-lg text-slate-700 mb-4">When experienced professionals leave, <span class="font-bold text-purple-600 pulse-glow">80% of tacit knowledge</span> is lost forever.</p>
+                                <div class="flex items-center gap-3 text-slate-500">
+                                    <i data-lucide="brain" class="w-5 h-5"></i>
+                                    <span class="font-medium">42% of firms report significant knowledge gaps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="enterprise-card group">
+                        <div class="flex items-start gap-6">
+                            <div class="enterprise-icon bg-gradient-to-br from-blue-500 to-cyan-600 group-hover:scale-110 transition-transform">
+                                <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold text-anyzam-navy mb-4">Security & Compliance Complexity</h4>
+                                <p class="text-lg text-slate-700 mb-4">Legal organizations need solutions maintaining <span class="font-bold text-blue-600 pulse-glow">100% compliance</span> with privilege and regulatory requirements.</p>
+                                <div class="flex items-center gap-3 text-slate-500">
+                                    <i data-lucide="scale" class="w-5 h-5"></i>
+                                    <span class="font-medium">Rising regulatory complexity across jurisdictions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact Summary -->
+                <div class="mt-16 text-center" data-aos="slide-up" data-aos-delay="400">
+                    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-2 border-red-200 rounded-3xl p-10 max-w-5xl mx-auto">
+                        <div class="flex items-center justify-center gap-6 mb-6">
+                            <div class="enterprise-icon bg-gradient-to-br from-red-500 to-orange-600 floating">
+                                <i data-lucide="alert-triangle" class="w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-red-900">The Combined Impact</h3>
+                        </div>
+                        <p class="text-xl text-red-800 leading-relaxed max-w-4xl mx-auto">
+                            These challenges compound to create significant productivity losses, increased operational costs, 
+                            and potential compliance risks that can impact firm profitability and client service quality.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Source Citations -->
+                <div class="mt-12 text-center">
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 max-w-4xl mx-auto">
+                        <h4 class="font-bold text-slate-700 mb-3">Research Sources</h4>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-600">
+                            <div>• McKinsey Global Institute "The Social Economy" (2024)</div>
+                            <div>• IDC Information Worker Survey (2024)</div>
+                            <div>• Deloitte Legal Technology Study (2024)</div>
+                            <div>• Thomson Reuters Future of Law Report (2024)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide relative bg-white rounded-2xl mb-8 border-2 border-slate-200 shadow-lg slide-top-border">
+            <div class="slide-content-wrapper">  
+                <div class="slide-number">4</div>
+                <h2 class="animate-fade-in-up">How <span class="aynzam-name">Aynzam</span> AI Addresses These Challenges</h2>
+                <div class="solution-demo bg-gradient-to-r from-blue-50 to-sky-50 p-8 md:p-10 rounded-xl my-8 text-center shadow-sm animate-slide-in-left">
+                    <h3>Natural Language Query Interface</h3>
+                    <div class="demo-flow flex flex-col md:flex-row justify-around items-center my-6 space-y-4 md:space-y-0 md:space-x-4">
+                        <div class="demo-step bg-white p-6 rounded-lg border border-blue-300 flex-1 min-w-[180px] shadow-sm floating">
+                            <div class="mb-2">
+                                <i data-lucide="message-square" class="w-8 h-8 text-anyzam-blue mx-auto"></i>
+                            </div>
+                            <strong>Natural Query</strong><br>
+                            <span class="text-xs text-slate-600">"Find merger precedents for technology companies"</span>
+                        </div>
+                        <div class="arrow text-3xl text-blue-500 md:mx-2 transform md:transform-none rotate-90 md:rotate-0 animate-pulse-subtle">&rarr;</div>
+                        <div class="demo-step bg-white p-6 rounded-lg border border-blue-300 flex-1 min-w-[180px] shadow-sm floating" style="animation-delay: 1s;">
+                            <div class="mb-2">
+                                <i data-lucide="brain" class="w-8 h-8 text-anyzam-blue mx-auto"></i>
+                            </div>
+                            <strong>AI Processing</strong><br>
+                            <span class="text-xs text-slate-600">Legal-trained AI analyzes query within secure environment</span>
+                        </div>
+                        <div class="arrow text-3xl text-blue-500 md:mx-2 transform md:transform-none rotate-90 md:rotate-0 animate-pulse-subtle">&rarr;</div>
+                        <div class="demo-step bg-white p-6 rounded-lg border border-blue-300 flex-1 min-w-[180px] shadow-sm floating" style="animation-delay: 2s;">
+                            <div class="mb-2">
+                                <i data-lucide="file-check" class="w-8 h-8 text-anyzam-blue mx-auto"></i>
+                            </div>
+                            <strong>Secure Results</strong><br>
+                            <span class="text-xs text-slate-600">Relevant information with source attribution</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-grid grid md:grid-cols-2 gap-6 mt-8">
+                    <div class="content-card bg-white p-6 rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-blue-500">
+                        <div class="enterprise-icon bg-gradient-to-br from-blue-500 to-cyan-600 mb-4">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div class="card-title">On-Premises Security</div>
+                        <div class="card-content">Deploys entirely within your secure infrastructure. Data processing occurs locally, maintaining complete data sovereignty and ensuring attorney-client privilege protection.</div>
+                    </div>
+                    <div class="content-card bg-white p-6 rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-blue-500">
+                        <div class="enterprise-icon bg-gradient-to-br from-blue-500 to-cyan-600 mb-4">
+                            <i data-lucide="link" class="w-6 h-6"></i>
+                        </div>
+                        <div class="card-title">Secure Integration</div>
+                        <div class="card-content">Connects to existing systems through encrypted channels, accessing multiple data sources while maintaining security protocols and access controls.</div>
+                    </div>
+                    <div class="content-card bg-white p-6 rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-blue-500">
+                        <div class="enterprise-icon bg-gradient-to-br from-blue-500 to-cyan-600 mb-4">
+                            <i data-lucide="scale" class="w-6 h-6"></i>
+                        </div>
+                        <div class="card-title">Legal Domain Training</div>
+                        <div class="card-content">AI models trained on legal terminology and document structures, designed to understand legal context and maintain appropriate confidentiality boundaries.</div>
+                    </div>
+                    <div class="content-card bg-white p-6 rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-blue-500">
+                        <div class="enterprise-icon bg-gradient-to-br from-blue-500 to-cyan-600 mb-4">
+                            <i data-lucide="target" class="w-6 h-6"></i>
+                        </div>
+                        <div class="card-title">Access Control Integration</div>
+                        <div class="card-content">Respects existing permission structures and automatically applies appropriate information barriers based on user roles and matter assignments.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Competitive Advantages Slide -->
+        <div class="slide relative bg-white rounded-2xl mb-8 border-2 border-slate-200 shadow-lg slide-top-border">
+            <div class="slide-content-wrapper">
+                <div class="slide-number">5</div>
+                <h2 class="animate-fade-in-up">Why <span class="aynzam-name">Aynzam</span> AI Stands Apart</h2>
+                <div class="content-grid grid md:grid-cols-1 lg:grid-cols-2 gap-8 my-8">
+                    <div class="competitive-advantage-section animate-slide-in-left">
+                        <h3 class="text-xl font-bold mb-6 text-center text-blue-700">Security-First Architecture</h3>
+                        <div class="space-y-4">
+                            <div class="advantage-item bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg border-l-4 border-green-500">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="building" class="w-6 h-6 text-green-800 mr-3"></i>
+                                    <strong class="text-green-800">On-Premises Deployment</strong>
+                                </div>
+                                <p class="text-sm text-green-700">Unlike cloud-based competitors, your data never leaves your infrastructure</p>
+                            </div>
+                            <div class="advantage-item bg-gradient-to-r from-blue-50 to-cyan-50 p-4 rounded-lg border-l-4 border-blue-500">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="scale" class="w-6 h-6 text-blue-800 mr-3"></i>
+                                    <strong class="text-blue-800">Legal Privilege Protection</strong>
+                                </div>
+                                <p class="text-sm text-blue-700">Built-in attorney-client privilege boundaries and matter isolation</p>
+                            </div>
+                            <div class="advantage-item bg-gradient-to-r from-purple-50 to-indigo-50 p-4 rounded-lg border-l-4 border-purple-500">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="shield-check" class="w-6 h-6 text-purple-800 mr-3"></i>
+                                    <strong class="text-purple-800">Zero External Dependencies</strong>
+                                </div>
+                                <p class="text-sm text-purple-700">No external API calls or third-party AI services required</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="competitive-advantage-section animate-slide-in-right">
+                        <h3 class="text-xl font-bold mb-6 text-center text-amber-700">Legal Industry Specialization</h3>
+                        <div class="space-y-4">
+                            <div class="advantage-item bg-gradient-to-r from-amber-50 to-yellow-50 p-4 rounded-lg border-l-4 border-amber-500">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="book-open" class="w-6 h-6 text-amber-800 mr-3"></i>
+                                    <strong class="text-amber-800">Legal Domain Training</strong>
+                                </div>
+                                <p class="text-sm text-amber-700">AI models specifically trained on legal terminology and document structures</p>
+                            </div>
+                            <div class="advantage-item bg-gradient-to-r from-red-50 to-pink-50 p-4 rounded-lg border-l-4 border-red-500">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="target" class="w-6 h-6 text-red-800 mr-3"></i>
+                                    <strong class="text-red-800">Practice-Specific Workflows</strong>
+                                </div>
+                                <p class="text-sm text-red-700">Tailored interfaces for different legal practice areas and user roles</p>
+                            </div>
+                            <div class="advantage-item bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-lg border-l-4 border-teal-500">
+                                <div class="flex items-center mb-2">
+                                    <i data-lucide="refresh-cw" class="w-6 h-6 text-teal-800 mr-3"></i>
+                                    <strong class="text-teal-800">Continuous Legal Updates</strong>
+                                </div>
+                                <p class="text-sm text-teal-700">Regular updates to stay current with evolving legal standards and requirements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="competitive-comparison bg-gradient-to-r from-slate-50 to-gray-50 p-6 rounded-xl mt-8 border border-slate-200 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <h3 class="text-center text-slate-700 mb-4">Competitive Positioning</h3>
+                    <div class="grid md:grid-cols-3 gap-4 text-center text-sm">
+                        <div class="comparison-item">
+                            <div class="font-bold text-red-600 mb-2 flex items-center justify-center gap-2">
+                                <i data-lucide="x-circle" class="w-5 h-5"></i>
+                                <span>Generic AI Tools</span>
+                            </div>
+                            <p class="text-xs text-slate-600">Cloud-dependent, no legal specialization, security concerns</p>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="font-bold text-yellow-600 mb-2 flex items-center justify-center gap-2">
+                                <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+                                <span>Legal Tech Platforms</span>
+                            </div>
+                            <p class="text-xs text-slate-600">Limited AI integration, narrow functionality, vendor lock-in</p>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="font-bold text-green-600 mb-2 flex items-center justify-center gap-2">
+                                <i data-lucide="check-circle" class="w-5 h-5"></i>
+                                <span><span class="aynzam-name">Aynzam</span> AI</span>
+                            </div>
+                            <p class="text-xs text-slate-600">On-premises security, legal specialization, comprehensive knowledge access</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide relative bg-white rounded-2xl mb-8 border-2 border-slate-200 shadow-lg slide-top-border">
+            <div class="slide-content-wrapper"> 
+                <div class="slide-number">6</div>
+                <h2>Legal Industry AI Adoption Context</h2>
+                <div class="stats-grid grid md:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
+                    <div class="stat-card bg-slate-50 p-6 rounded-xl text-center border border-slate-200 shadow-sm">
+                        <div class="stat-number">79%</div>
+                        <div class="stat-label">of law firms expect AI to have significant impact</div>
+                        <div class="stat-source">Thomson Reuters 2024</div>
+                    </div>
+                    <div class="stat-card bg-slate-50 p-6 rounded-xl text-center border border-slate-200 shadow-sm">
+                        <div class="stat-number">30%</div>
+                        <div class="stat-label">of firms report productivity improvements from AI</div>
+                        <div class="stat-source">Gartner Survey 2024</div>
+                    </div>
+                    <div class="stat-card bg-slate-50 p-6 rounded-xl text-center border border-slate-200 shadow-sm">
+                        <div class="stat-number">$1.45B</div>
+                        <div class="stat-label">legal AI market size in 2024</div>
+                        <div class="stat-source">Grand View Research</div>
+                    </div>
+                    <div class="stat-card bg-slate-50 p-6 rounded-xl text-center border border-slate-200 shadow-sm">
+                        <div class="stat-number">17.3%</div>
+                        <div class="stat-label">projected annual growth rate (Legal AI Market)</div>
+                        <div class="stat-source">Industry Analysis 2025-2030</div>
+                    </div>
+                </div>
+                <div class="highlight-box bg-blue-50 p-6 rounded-xl my-6 border-l-4 border-blue-500 shadow-sm">
+                    <h3>Why This Matters to Your Firm</h3>
+                    <p>The legal industry is increasingly recognizing AI's potential. Thomson Reuters research highlights that legal professionals anticipate AI could free up significant time. Early adopting firms are not just exploring AI, but actively implementing solutions to enhance efficiency, improve client service, and maintain a competitive edge. This trend indicates a shift towards leveraging technology for strategic advantages.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide relative bg-white rounded-2xl mb-8 border-2 border-slate-200 shadow-lg slide-top-border">
+            <div class="slide-content-wrapper"> 
+                <div class="slide-number">7</div>
+                <h2 class="text-center mb-8">Research-Indicated Potential Benefits</h2>
+                
+                <!-- Benefits Showcase -->
+                <div class="benefits-showcase">
+                    <div class="text-center mb-12">
+                        <h3 class="text-3xl font-bold text-anyzam-navy mb-4">What Leading Research Shows</h3>
+                        <p class="text-xl text-slate-600 max-w-4xl mx-auto">Industry studies reveal significant productivity gains and ROI potential for AI-powered knowledge management systems</p>
+                    </div>
+
+                    <!-- Key Benefits Grid -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                        <div class="benefit-stat">
+                            <div class="benefit-number">4hrs</div>
+                            <div class="benefit-label">Potential weekly time savings per legal professional</div>
+                            <div class="text-xs text-slate-500 mt-2">Thomson Reuters 2024</div>
+                        </div>
+                        <div class="benefit-stat">
+                            <div class="benefit-number">3.7x</div>
+                            <div class="benefit-label">Average ROI for AI implementations</div>
+                            <div class="text-xs text-slate-500 mt-2">Microsoft/IDC 2024</div>
+                        </div>
+                        <div class="benefit-stat">
+                            <div class="benefit-number">95%</div>
+                            <div class="benefit-label">Users report time savings on routine tasks</div>
+                            <div class="text-xs text-slate-500 mt-2">Industry Surveys</div>
+                        </div>
+                        <div class="benefit-stat">
+                            <div class="benefit-number">75%</div>
+                            <div class="benefit-label">Reduction in information search time</div>
+                            <div class="text-xs text-slate-500 mt-2">McKinsey Research</div>
+                        </div>
+                    </div>
+
+                    <!-- Implementation Timeline -->
+                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-200">
+                        <h4 class="text-2xl font-bold text-center text-anyzam-navy mb-8">Implementation & Value Realization</h4>
+                        <div class="grid md:grid-cols-3 gap-8 text-center">
+                            <div class="timeline-step">
+                                <div class="step-icon">
+                                    <i data-lucide="calendar" class="w-8 h-8 text-white"></i>
+                                </div>
+                                <h5 class="text-xl font-bold text-anyzam-navy mb-2">Month 1-2</h5>
+                                <p class="text-slate-600">Security assessment, pilot deployment, and initial user training</p>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-icon">
+                                    <i data-lucide="trending-up" class="w-8 h-8 text-white"></i>
+                                </div>
+                                <h5 class="text-xl font-bold text-anyzam-navy mb-2">Month 3-4</h5>
+                                <p class="text-slate-600">Full deployment, workflow integration, and productivity gains visible</p>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-icon">
+                                    <i data-lucide="target" class="w-8 h-8 text-white"></i>
+                                </div>
+                                <h5 class="text-xl font-bold text-anyzam-navy mb-2">Month 5+</h5>
+                                <p class="text-slate-600">Full ROI realization and continuous optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="source-citation mt-8">
+                    <p class="text-center text-sm text-slate-500">Sources: Thomson Reuters Future of Professionals Report 2024; Microsoft/IDC AI Opportunity Study 2024; McKinsey Global Institute Research</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide relative bg-white rounded-2xl mb-8 border-2 border-slate-200 shadow-lg slide-top-border">
+            <div class="slide-content-wrapper"> <div class="slide-number">8</div>
+                <h2>Engagement Approach</h2>
+                <div class="business-model-grid grid md:grid-cols-1 lg:grid-cols-3 gap-8 my-8">
+                    <div class="pricing-card bg-slate-50 p-8 rounded-xl text-center border border-blue-200 shadow-md">
+                        <h3>Pilot Program</h3>
+                        <div class="text-lg font-bold text-slate-700 mb-3">Risk-Managed Evaluation</div>
+                        <p>4-week proof-of-concept deployment with a limited user group to demonstrate potential value and technical feasibility within your environment.</p>
+                        <ul>
+                            <li>Security assessment and validation</li>
+                            <li>Technical integration testing</li>
+                            <li>User feedback collection</li>
+                            <li>Measurable outcome evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card bg-slate-50 p-8 rounded-xl text-center border border-blue-200 shadow-md">
+                        <h3>Implementation Methodology</h3>
+                        <div class="text-lg font-bold text-slate-700 mb-3">Phased & Supported Approach</div>
+                        <p>Gradual deployment strategy minimizing operational disruption while maximizing adoption success, tailored to your firm's structure.</p>
+                        <ul>
+                            <li>Practice group-specific rollout options</li>
+                            <li>Comprehensive user training & onboarding</li>
+                            <li>Continuous optimization based on feedback</li>
+                            <li>Performance monitoring and reporting</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card bg-slate-50 p-8 rounded-xl text-center border border-blue-200 shadow-md">
+                        <h3>Support Structure</h3>
+                        <div class="text-lg font-bold text-slate-700 mb-3">Dedicated Partnership</div>
+                        <p>A dedicated support team with legal industry expertise ensures successful implementation and ongoing optimization of <span class="aynzam-name">Aynzam</span> AI.</p>
+                        <ul>
+                            <li>Access to legal industry specialists</li>
+                            <li>Responsive technical support team</li>
+                            <li>Regular performance reviews & consultations</li>
+                            <li>Proactive continuous improvement process</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide relative bg-white rounded-2xl mb-8 border-2 border-slate-200 shadow-lg slide-top-border">
+            <div class="slide-content-wrapper"> <div class="slide-number">9</div>
+                <h2>Security & Compliance: Our Foundation</h2>
+                 <div class="content-grid grid md:grid-cols-2 gap-6 my-8">
+                    <div class="content-card bg-white p-6 rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-600">
+                        <span class="card-icon text-3xl mb-3 block">🏢</span>
+                        <div class="card-title">Complete Data Sovereignty</div>
+                        <div class="card-content">All data processing occurs entirely within your firm's controlled infrastructure. No external data transmission or third-party cloud processing ensures absolute organizational control over sensitive information.</div>
+                    </div>
+                    <div class="content-card bg-white p-6 rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-600">
+                        <span class="card-icon text-3xl mb-3 block">⚖️</span>
+                        <div class="card-title">Legal Privilege Protection by Design</div>
+                        <div class="card-content">The system is architected to respect and uphold attorney-client privilege boundaries. It maintains appropriate information barriers between matters, clients, and practice groups, configurable to your firm's policies.</div>
+                    </div>
+                    <div class="content-card bg-white p-6 rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-600">
+                        <span class="card-icon text-3xl mb-3 block">🔐</span>
+                        <div class="card-title">Enterprise-Grade Security Standards</div>
+                        <div class="card-content">Implementation adheres to rigorous enterprise security best practices, including end-to-end encryption, granular access controls, comprehensive audit logging, and regular security assessments.</div>
+                    </div>
+                    <div class="content-card bg-white p-6 rounded-xl border border-slate-200 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-purple-600">
+                        <span class="card-icon text-3xl mb-3 block">📋</span>
+                        <div class="card-title">Robust Compliance Framework</div>
+                        <div class="card-content">Designed to support your firm's compliance with applicable data privacy laws (e.g., GDPR, CCPA) and legal industry ethical requirements. We provide documentation and support for your compliance efforts.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide relative bg-white rounded-2xl mb-8 border-2 border-slate-200 shadow-lg slide-top-border">
+            <div class="slide-content-wrapper"> 
+                <div class="slide-number">10</div>
+                
+                <!-- Main CTA Section -->
+                <div class="final-cta">
+                    <h2 class="cta-title">Explore Potential Benefits for Your Firm</h2>
+                    <p class="cta-subtitle">Let's discuss how AI-powered knowledge management can enhance your firm's information access, efficiency, and security.</p>
+                    
+                    <div class="cta-buttons">
+                        <button class="cta-button">
+                            <i data-lucide="calendar" class="w-5 h-5 inline mr-2"></i>
+                            Schedule Demonstration
+                        </button>
+                        <button class="cta-button">
+                            <i data-lucide="shield-check" class="w-5 h-5 inline mr-2"></i>
+                            Security Consultation
+                        </button>
+                        <button class="cta-button">
+                            <i data-lucide="flask-conical" class="w-5 h-5 inline mr-2"></i>
+                            Pilot Program Discussion
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Evaluation Process -->
+                <div class="evaluation-steps mt-12">
+                    <h3 class="text-2xl font-bold text-center text-anyzam-navy mb-8">Proposed Evaluation Process</h3>
+                    <div class="grid sm:grid-cols-3 gap-8 text-center">
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i data-lucide="search" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-anyzam-navy mb-3">Initial Assessment</h4>
+                            <p class="text-slate-600">Security evaluation & technical feasibility review</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i data-lucide="flask-conical" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-anyzam-navy mb-3">Controlled Pilot</h4>
+                            <p class="text-slate-600">Limited deployment with measurable success criteria</p>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i data-lucide="bar-chart-3" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-anyzam-navy mb-3">Results Evaluation</h4>
+                            <p class="text-slate-600">Data-driven assessment of benefits and next steps</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="mt-12 text-center">
+                        <div class="bg-white rounded-2xl p-6 border-2 border-slate-200 max-w-2xl mx-auto">
+                            <h4 class="text-xl font-bold text-anyzam-navy mb-4">Ready to Transform Your Legal Practice?</h4>
+                            <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-slate-600">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="mail" class="w-5 h-5 text-anyzam-blue"></i>
+                                    <span class="font-medium">contact@aynzam.ai</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="phone" class="w-5 h-5 text-anyzam-blue"></i>
+                                    <span class="font-medium">+49 17632763330</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="globe" class="w-5 h-5 text-anyzam-blue"></i>
+                                    <span class="font-medium">www.aynzam.ai</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Meet The Team -->
+        <div class="slide" data-aos="fade-up" data-aos-duration="1000">
+            <div class="slide-content-wrapper"> 
+                <div class="slide-number">11</div>
+                
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-bold text-anyzam-navy mb-6" data-aos="fade-down">Meet The Team</h2>
+                    <p class="text-2xl text-slate-600 max-w-4xl mx-auto">Experienced professionals dedicated to delivering secure, innovative AI solutions for the legal industry</p>
+                </div>
+
+                <!-- Team Members Grid -->
+                <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto" data-aos="fade-up" data-aos-delay="300">
+                    
+                    <!-- Richard Hofmann -->
+                    <div class="team-member-card text-center">
+                        <div class="team-profile-container mb-6">
+                            <div class="team-profile-image">
+                                <img src="pfp/richard.jpeg" alt="Richard Hofmann" class="profile-img">
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-anyzam-navy mb-2">Richard Hofmann</h3>
+                        <div class="text-lg font-semibold text-anyzam-blue mb-4">IT Security & Software Development Expert</div>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            3 years of specialized experience in IT security and software development. 
+                            Ensures robust security architectures and secure development practices for enterprise AI implementations.
+                        </p>
+                        <div class="flex justify-center gap-3">
+                            <div class="skill-badge">Security Architecture</div>
+                            <div class="skill-badge">Software Development</div>
+                        </div>
+                    </div>
+
+                    <!-- Diar Auraibi -->
+                    <div class="team-member-card text-center">
+                        <div class="team-profile-container mb-6">
+                            <div class="team-profile-image">
+                                <img src="pfp/diar.jpeg" alt="Diar Auraibi" class="profile-img">
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-anyzam-navy mb-2">Diar Auraibi</h3>
+                        <div class="text-lg font-semibold text-anyzam-blue mb-4">Business Development & Operations Specialist</div>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            4 years of experience in business development and operations. 
+                            Drives strategic partnerships and operational excellence to deliver value-focused AI solutions for legal professionals.
+                        </p>
+                        <div class="flex justify-center gap-3">
+                            <div class="skill-badge">Business Strategy</div>
+                            <div class="skill-badge">Operations</div>
+                        </div>
+                    </div>
+
+                    <!-- Mustafa Nisani -->
+                    <div class="team-member-card text-center">
+                        <div class="team-profile-container mb-6">
+                            <div class="team-profile-image">
+                                <img src="pfp/mustafa.jpeg" alt="Mustafa Nisani" class="profile-img">
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-anyzam-navy mb-2">Mustafa Nisani</h3>
+                        <div class="text-lg font-semibold text-anyzam-blue mb-4">AI Engineering & Strategy Consultant</div>
+                        <p class="text-slate-600 leading-relaxed mb-4">
+                            4 years of expertise in machine learning, AI engineering, and strategic AI consulting. 
+                            Leads technical innovation and provides strategic guidance for AI implementation in legal environments.
+                        </p>
+                        <div class="flex justify-center gap-3">
+                            <div class="skill-badge">AI Engineering</div>
+                            <div class="skill-badge">Strategic Consulting</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Strengths Summary -->
+                <div class="mt-16 text-center" data-aos="slide-up" data-aos-delay="600">
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-3xl p-10 max-w-5xl mx-auto">
+                        <div class="flex items-center justify-center gap-6 mb-6">
+                            <div class="enterprise-icon bg-gradient-to-br from-blue-500 to-indigo-600 floating">
+                                <i data-lucide="users" class="w-8 h-8"></i>
+                            </div>
+                            <h3 class="text-3xl font-bold text-blue-900">Combined Expertise</h3>
+                        </div>
+                        <p class="text-xl text-blue-800 leading-relaxed max-w-4xl mx-auto">
+                            Our multidisciplinary team combines deep technical expertise in security and AI with proven business acumen, 
+                            ensuring successful deployment of enterprise-grade legal AI solutions that meet both technical and business requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Professional Libraries
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Lucide Icons
+            lucide.createIcons();
+            
+            // Initialize AOS Animations
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+            
+            // Initialize Charts
+            initializeCharts();
+            
+            // Initialize Navigation
+            // initializeNavigation(); // Removed
+            
+            // Initialize Export Functionality
+            // initializeExport(); // Removed
+        });
+
+        // Enterprise Slide Navigation System
+        // let currentSlideIndex = 0;
+        // const slides = document.querySelectorAll('.slide');
+        // const totalSlides = slides.length;
+
+        // function initializeNavigation() { ... }
+        // function handleKeyNavigation(e) { ... }
+        // function getCurrentSlideIndex() { ... }
+        // function navigateToSlide(index) { ... }
+        // function nextSlide() { ... }
+        // function prevSlide() { ... }
+        // function updateProgress() { ... }
+        // function updateSlideCounter() { ... }
+
+        // Professional Chart Initialization
+        function initializeCharts() {
+            // Neural network is now pure CSS/HTML - no chart initialization needed
+            console.log('Charts and diagrams loaded');
+        }
+
+        // Enhanced Export Functionality
+        // function initializeExport() { ... }
+        // function handleExport() { ... }
+        // function showNotification(message, isError = false) { ... }
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center' 
+                    });
+                }
+            });
+        });
+        
+        // Enterprise Performance Monitoring
+        function trackEngagement() {
+            // Track slide viewing time
+            const slideStartTime = Date.now();
+            
+            return function() {
+                const viewTime = Date.now() - slideStartTime;
+                console.log(`Slide ${currentSlideIndex + 1} viewed for ${Math.round(viewTime / 1000)} seconds`);
+            };
+        }
+
+        // Intersection Observer for Enhanced Animations
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const slideObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('slide-visible');
+                    
+                    // Trigger staggered animations for child elements
+                    const animatedElements = entry.target.querySelectorAll('[data-aos]');
+                    animatedElements.forEach((el, index) => {
+                        setTimeout(() => {
+                            el.classList.add('aos-animate');
+                        }, index * 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe all slides
+        slides.forEach(slide => {
+            slideObserver.observe(slide);
+        });
+
+        // Enhanced Print Optimization
+        window.addEventListener('beforeprint', function() {
+            // Optimize for print
+            document.body.classList.add('printing');
+            
+            // Ensure all animations are completed
+            document.querySelectorAll('[data-aos]').forEach(el => {
+                el.classList.add('aos-animate');
+            });
+        });
+
+        window.addEventListener('afterprint', function() {
+            document.body.classList.remove('printing');
+        });
+
+        // Preload Critical Resources
+        function preloadResources() {
+            const criticalImages = [
+                // Add any critical images here
+            ];
+            
+            criticalImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+
+        // Call preload on page load
+        window.addEventListener('load', preloadResources);
+
+        // Enterprise Error Handling
+        window.addEventListener('error', function(e) {
+            console.error('Presentation Error:', e.error);
+            showNotification('An error occurred. Please refresh the page.', true);
+        });
+
+        // Prevent context menu on production (optional security measure)
+        if (window.location.protocol !== 'file:') {
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+            });
+        }
+    </script>
+</body>
+</html>
